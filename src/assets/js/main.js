@@ -1,4 +1,4 @@
-(function($) {
+$(document).ready(function(){
     "use strict";
 
     var isMobile = {
@@ -571,7 +571,7 @@
         else {
             $("#home-banner").show().revolution({
                 sliderType: "standard",
-                jsFileLocation: "plugins/revolution/js/",
+                jsFileLocation: "./assets/plugins/revolution/js/",
                 dottedOverlay: "none",
                 delay: 5000,
                 navigation: {
@@ -703,6 +703,6 @@
         resizeHeader()
     });
 
-})(jQuery);
+  });
 
 //# sourceMappingURL=main.js.map

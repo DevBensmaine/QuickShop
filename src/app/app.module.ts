@@ -13,6 +13,7 @@ import { BannerComponent } from './pages/pagehome/banner/banner.component';
 import { SalesComponent } from './pages/pagehome/sales/sales.component';
 import { HomeMainComponent } from './pages/pagehome/home-main/home-main.component';
 import { CartProductComponent } from './pages/pagehome/feature-products/cart-product/cart-product.component';
+import { SalesCartComponent } from './pages/pagehome/sales/sales-cart/sales-cart.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { CartProductComponent } from './pages/pagehome/feature-products/cart-pro
     SalesComponent,
     HomeMainComponent,
     CartProductComponent,
+    SalesCartComponent,
 
   ],
   imports: [
