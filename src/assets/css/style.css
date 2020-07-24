@@ -1633,7 +1633,7 @@ textarea.form-control {
     -moz-transition: all 0.4s ease;
     transition: all 0.4s ease; }
   .ps-btn:hover, button.ps-btn:hover {
-    background-color: #50CF96;
+    background-color:  #db5a35;
     color: #fff; }
     .ps-btn:hover:before, button.ps-btn:hover:before {
       background-color: rgba(0, 0, 0, 0.1); }
@@ -3437,7 +3437,7 @@ textarea.form-control {
   height: 60px;
   margin: -20px 0 0 -20px;
   border: 8px solid #fc663a;
-  border-bottom-color: #219962;
+  border-bottom-color: #ff5624;
   border-radius: 50%;
   animation: animLoader 0.8s linear infinite forwards; }
 
@@ -5426,7 +5426,7 @@ textarea.form-control {
       font-size: 22px;
       color: #fff; }
     .ps-product--detail .ps-product__shopping .ps-product__actions a:hover {
-      background-color: #fc663a; }
+      background-color: #db5a35; }
 
 .ps-product--detail .ps-product__preview {
   min-width: 106px;
@@ -5488,7 +5488,7 @@ textarea.form-control {
   .ps-product--detail .ps-product__video img {
     max-width: 60px; }
   .ps-product--detail .ps-product__video:hover i {
-    background-color: rgba(42, 195, 125, 0.8); }
+    background-color: #db5a35; }
     .ps-product--detail .ps-product__video:hover i:before {
       color: #fff; }
 
