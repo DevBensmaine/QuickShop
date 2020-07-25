@@ -242,10 +242,11 @@
         });
     }
 
-    function masonry() {
+  function masonry() {
+      setTimeout(function(){
         var masonryTrigger = $('.ps-masonry');
         if (masonryTrigger.length > 0) {
-            masonryTrigger.imagesLoaded(function() {
+         masonryTrigger.imagesLoaded(function() {
                 masonryTrigger.isotope({
                     columnWidth: '.grid-sizer',
                     itemSelector: '.grid-item'
@@ -268,6 +269,7 @@
                 return false;
             });
         }
+      }, 2000);
     }
 
     function rating() {
@@ -412,6 +414,8 @@
 
     function productVaritantsNormal() {
         var variants = $('.ps-shoe__variant.normal');
+
+        setTimeout(function(){
         variants.owlCarousel({
             margin: 20,
             autoplay: false,
@@ -441,6 +445,7 @@
                 }
             }
         });
+        }, 1000);
     }
 
     function zoomAction() {

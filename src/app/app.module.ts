@@ -22,7 +22,7 @@ import { InfoProductsComponent } from './pages/pageProductDetail/product-detail/
 
 const routes: Routes = [
   { path:'' , component:HomeMainComponent },
-  { path:'product-detail' , component:ProductDetailComponent},
+  { path:'product-detail/:id' , component:ProductDetailComponent, pathMatch: 'full' },
   // { path:'productDetail' , component:LoginComponent  }
   { path: '',   redirectTo: '/', pathMatch: 'full' },
 ];

@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ProductService } from '../../../../services/product.service';
 import { Product } from 'src/app/interfaces/product';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'cart-product',
@@ -8,27 +9,14 @@ import { Product } from 'src/app/interfaces/product';
   styleUrls: ['./cart-product.component.css'],
 })
 export class CartProductComponent implements OnInit {
-  products: Product[] = [];
+  @Input() jsonData;
+  constructor(private router:Router) {}
 
-  constructor(private productService: ProductService) {}
-
-  ngOnInit(): void {
-    this.getProductNow();
-  }
+  ngOnInit(): void {}
 
   Detail() {
     console.log('clicked');
-
-    console.log(this.findProductByid(1));
-  }
-  getProductNow() {
-    this.productService.getProducts().subscribe({
-      next: (products) => (this.products = products),
-      error: (err) => console.log(err),
-    });
-  }
-
-  findProductByid(id) {
-    return this.products.filter((p) => p.idProduct === id);
+    // console.log(this.jsonData.idProduct)
+    this.router.navigate(['/product-detail',this.jsonData.idProduct]);
   }
 }

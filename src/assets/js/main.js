@@ -1,3 +1,5 @@
+// const { $ } = require("protractor");
+
 $(document).ready(function(){
     "use strict";
 
@@ -243,31 +245,34 @@ $(document).ready(function(){
     }
 
     function masonry() {
-        var masonryTrigger = $('.ps-masonry');
-        if (masonryTrigger.length > 0) {
-            masonryTrigger.imagesLoaded(function() {
-                masonryTrigger.isotope({
-                    columnWidth: '.grid-sizer',
-                    itemSelector: '.grid-item'
-                });
-            });
-            var filters = masonryTrigger.closest('.masonry-root').find('.ps-masonry__filter > li > a');
-            filters.on('click', function() {
-                var selector = $(this).attr('data-filter');
-                filters.find('a').removeClass('current');
-                $(this).parent('li').addClass('current');
-                $(this).parent('li').siblings('li').removeClass('current');
-                console.log($(this));
-                masonryTrigger.isotope({
-                    itemSelector: '.grid-item',
-                    isotope: {
-                        columnWidth: '.grid-sizer'
-                    },
-                    filter: selector
-                });
-                return false;
-            });
-        }
+      // setTimeout(function(){
+        // var masonryTrigger = $('.ps-masonry');
+        // if (masonryTrigger.length > 0) {
+        //     masonryTrigger.imagesLoaded(function() {
+        //         masonryTrigger.isotope({
+        //             columnWidth: '.grid-sizer',
+        //             itemSelector: '.grid-item'
+        //         });
+        //     });
+        //     var filters = masonryTrigger.closest('.masonry-root').find('.ps-masonry__filter > li > a');
+        //     filters.on('click', function() {
+        //         var selector = $(this).attr('data-filter');
+        //         filters.find('a').removeClass('current');
+        //         $(this).parent('li').addClass('current');
+        //         $(this).parent('li').siblings('li').removeClass('current');
+        //         console.log($(this));
+        //         masonryTrigger.isotope({
+        //             itemSelector: '.grid-item',
+        //             isotope: {
+        //                 columnWidth: '.grid-sizer'
+        //             },
+        //             filter: selector
+        //         });
+        //         return false;
+        //     });
+
+        // }
+      // }, 5000);
     }
 
     function rating() {
@@ -401,6 +406,7 @@ $(document).ready(function(){
     }
 
     function productThumbnailChange() {
+      setTimeout(function(){
         var originImageData;
         $('.ps-shoe__variants').on('mouseenter', 'img', function() {
             var image = $(this).attr('src');
@@ -408,9 +414,12 @@ $(document).ready(function(){
             originImageData = originImage.attr('src');
             originImage.attr('src', image);
         });
+      },1000)
+
     }
 
     function productVaritantsNormal() {
+      setTimeout(function(){
         var variants = $('.ps-shoe__variant.normal');
         variants.owlCarousel({
             margin: 20,
@@ -441,6 +450,7 @@ $(document).ready(function(){
                 }
             }
         });
+      }, 1000);
     }
 
     function zoomAction() {
@@ -457,6 +467,7 @@ $(document).ready(function(){
     }
 
     function zoomInit() {
+
         var zoom = $('.ps-product__image .item').first().find('.zoom');
         var primary = $('.ps-product__image .item.slick-active').first().children('.zoom');
         primary.elevateZoom({
@@ -671,30 +682,60 @@ $(document).ready(function(){
     }
 
     $(document).ready(function() {
-        backgroundImage();
-        parallax();
-        rating();
-        menuBtnToggle();
-        subMenuToggle();
-        owlCarousel($('.owl-slider'));
-        mapConfig();
-        // setHeightProduct();
-        navigateOwlCarousel();
-        countDown();
-        masonry();
-        stickyHeader();
-        productVariantsAjax();
-        productThumbnailChange();
-        bootstrapSelect();
-        slickConfig();
-        zoomInit();
-        magnificPopup();
-        productVaritantsNormal();
-        // stickyWidget();
-        revolution();
-        filterSlider();
+      backgroundImage();
+      parallax();
+      rating();
+      menuBtnToggle();
+      subMenuToggle();
+      owlCarousel($('.owl-slider'));
+      mapConfig();
+      // setHeightProduct();
+      navigateOwlCarousel();
+      countDown();
+      masonry();
+      stickyHeader();
+      productVariantsAjax();
+      productThumbnailChange();
+      bootstrapSelect();
+      slickConfig();
+      zoomInit();
+      magnificPopup();
+      productVaritantsNormal();
+      // stickyWidget();
+      revolution();
+      filterSlider();
+
+
+
+
     });
 
+    $('#hassan').click(function(){
+      backgroundImage();
+      parallax();
+      rating();
+      menuBtnToggle();
+      subMenuToggle();
+      owlCarousel($('.owl-slider'));
+      mapConfig();
+      // setHeightProduct();
+      navigateOwlCarousel();
+      countDown();
+      masonry();
+      stickyHeader();
+      productVariantsAjax();
+      productThumbnailChange();
+      bootstrapSelect();
+      slickConfig();
+      zoomInit();
+      magnificPopup();
+      productVaritantsNormal();
+      // stickyWidget();
+      revolution();
+      filterSlider();
+
+
+  })
     $(window).on('load', function() {
         $('.ps-loading').addClass('loaded');
     });

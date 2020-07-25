@@ -4,7 +4,7 @@
       <h3 class="ps-section__title" data-mask="features">- Features Products</h3>
       <ul class="ps-masonry__filter">
         <li class="current"><a href="#" data-filter="*">All <sup>8</sup></a></li>
-        <li><a href="#" data-filter=".nike">Nike <sup>1</sup></a></li>
+        <li><a href="#" data-filter=".Nike">Nike <sup>1</sup></a></li>
         <li><a href="#" data-filter=".adidas">Adidas <sup>1</sup></a></li>
         <li><a href="#" data-filter=".men">Men <sup>1</sup></a></li>
         <li><a href="#" data-filter=".women">Women <sup>1</sup></a></li>
@@ -15,10 +15,9 @@
       <div class="masonry-wrapper" data-col-md="4" data-col-sm="2" data-col-xs="1" data-gap="30" data-radio="100%">
         <div class="ps-masonry">
           <div class="grid-sizer"></div>
-          <cart-product></cart-product>
-          <cart-product></cart-product>
-          <cart-product></cart-product>
-
+          <div *ngFor="let item of products">
+              <cart-product [jsonData]="item" ></cart-product>
+            </div>
         </div>
       </div>
     </div>
