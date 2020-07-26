@@ -8,38 +8,24 @@
       <option value="2">5</option>
     </select><a href="#">(Read all 8 reviews)</a>
   </div>
-  <h1>Air strong  training</h1>
-  <p class="ps-product__category"><a href="#"> Men shoes</a>,<a href="#"> Nike</a>,<a href="#"> Jordan</a></p>
-  <h3 class="ps-product__price">DH 115 <del>DH 330</del></h3>
+  <h1>{{productActive[0].title}}</h1>
+  <p class="ps-product__category"><a href="#"> Men shoes</a>,<a href="#"> {{productActive[0].mark}}</a>,<a href="#"> {{productActive[0].cat}}</a></p>
+  <h3 class="ps-product__price">DH {{productActive[0].priceBeforePromotion}} <del>DH {{productActive[0].priceAvantPromotion}}</del></h3>
   <div class="ps-product__block ps-product__quickview">
     <h4>QUICK REVIEW</h4>
-    <p>The Nike Free RN 2017 Men's Running Sky weighs less than previous versions and features an updated knit material…</p>
+    <p>{{productActive[0].description}}</p>
   </div>
   <div class="ps-product__block ps-product__style">
     <h4>CHOOSE YOUR STYLE</h4>
     <ul>
-      <li><a href="product-detail.html"><img src="../../../../../../assets/images/shoe/sidebar/1.jpg" alt=""></a></li>
-      <li><a href="product-detail.html"><img src="../../../../../../assets/images/shoe/sidebar/2.jpg" alt=""></a></li>
-      <li><a href="product-detail.html"><img src="../../../../../../assets/images/shoe/sidebar/3.jpg" alt=""></a></li>
-      <li><a href="product-detail.html"><img src="../../../../../../assets/images/shoe/sidebar/2.jpg" alt=""></a></li>
+      <li *ngFor="let srcImg of productActive[0].varying "><a><img src="../../../../../.{{srcImg}}" alt=""></a></li>
     </ul>
   </div>
   <div class="ps-product__block ps-product__size">
     <h4>CHOOSE SIZE<a href="#">Size chart</a></h4>
     <select class="ps-select selectpicker">
       <option value="1">Select Size</option>
-      <option value="2">4</option>
-      <option value="3">4.5</option>
-      <option value="3">5</option>
-      <option value="3">6</option>
-      <option value="3">6.5</option>
-      <option value="3">7</option>
-      <option value="3">7.5</option>
-      <option value="3">8</option>
-      <option value="3">8.5</option>
-      <option value="3">9</option>
-      <option value="3">9.5</option>
-      <option value="3">10</option>
+      <option *ngFor="let taille of productActive[0].taille" [value]="taille">{{taille}}</option>
     </select>
     <div class="form-group">
       <input class="form-control" type="number" value="1">

@@ -526,7 +526,7 @@ $(document).ready(function(){
     function bootstrapSelect() {
         $('.selectpicker').selectpicker({
             style: 'btn-primary',
-            size: 4
+            size: 6
         });
     }
 
@@ -711,31 +711,11 @@ $(document).ready(function(){
     });
 
     $('#hassan').click(function(){
-      backgroundImage();
-      parallax();
-      rating();
-      menuBtnToggle();
-      subMenuToggle();
-      owlCarousel($('.owl-slider'));
-      mapConfig();
-      // setHeightProduct();
-      navigateOwlCarousel();
-      countDown();
-      masonry();
-      stickyHeader();
-      productVariantsAjax();
-      productThumbnailChange();
-      bootstrapSelect();
-      slickConfig();
+    //  owlCarousel($('.owl-slider'));
+     //  slickConfig();
       zoomInit();
-      magnificPopup();
-      productVaritantsNormal();
-      // stickyWidget();
-      revolution();
-      filterSlider();
-
-
   })
+
     $(window).on('load', function() {
         $('.ps-loading').addClass('loaded');
     });

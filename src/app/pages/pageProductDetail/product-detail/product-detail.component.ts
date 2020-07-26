@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from 'src/app/services/product.service';
+import { Observable } from 'rxjs';
+import { Product } from '../../../interfaces/product';
 
 @Component({
   selector: 'app-product-detail',
@@ -7,9 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDetailComponent implements OnInit {
 
-  constructor() { }
+  productFinder:Observable<Product[]>
+  name:string = "sajjjasa"
+  constructor(private productService:ProductService  ) { }
 
   ngOnInit(): void {
+
+    this.productService.findProductById(1).subscribe({
+      next: (product) => (this.productFinder= product),
+      error: (err) => console.log(err),
+    });
+    console.log("ProductDetailComponent")
+    console.log(this.productFinder)
   }
 
 }
