@@ -19,6 +19,7 @@ import { SalesCartComponent } from './pages/pagehome/sales/sales-cart/sales-cart
 import { ProductDetailComponent } from './pages/pageProductDetail/product-detail/product-detail.component';
 import { SliderImagesProductsComponent } from './pages/pageProductDetail/product-detail/product-description/slider-images-products/slider-images-products.component';
 import { InfoProductsComponent } from './pages/pageProductDetail/product-detail/product-description/info-products/info-products.component';
+import { ReviewProductComponent } from './pages/pageProductDetail/product-detail/product-description/review-product/review-product.component';
 
 const routes: Routes = [
   { path:'' , component:HomeMainComponent },
@@ -46,6 +47,7 @@ const routes: Routes = [
     ProductDetailComponent,
     SliderImagesProductsComponent,
     InfoProductsComponent,
+    ReviewProductComponent,
 
   ],
   imports: [
