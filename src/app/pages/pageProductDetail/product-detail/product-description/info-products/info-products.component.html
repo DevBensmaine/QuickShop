@@ -1,16 +1,10 @@
 <div class="ps-product__info">
-  <div class="ps-product__rating">
-    <select class="ps-rating">
-      <option value="1">1</option>
-      <option value="1">2</option>
-      <option value="1">3</option>
-      <option value="1">4</option>
-      <option value="2">5</option>
-    </select><a href="#">(Read all 8 reviews)</a>
-  </div>
+
   <h1>{{productActive[0].title}}</h1>
-  <p class="ps-product__category"><a href="#"> Men shoes</a>,<a href="#"> {{productActive[0].mark}}</a>,<a href="#"> {{productActive[0].cat}}</a></p>
-  <h3 class="ps-product__price">DH {{productActive[0].priceBeforePromotion}} <del>DH {{productActive[0].priceAvantPromotion}}</del></h3>
+  <p class="ps-product__category"><a href="#"> Men shoes</a>,<a href="#"> {{productActive[0].mark}}</a>,<a href="#">
+      {{productActive[0].cat}}</a></p>
+  <h3 class="ps-product__price">DH {{productActive[0].priceBeforePromotion}} <del>DH
+      {{productActive[0].priceAvantPromotion}}</del></h3>
   <div class="ps-product__block ps-product__quickview">
     <h4>QUICK REVIEW</h4>
     <p>{{productActive[0].description}}</p>
@@ -32,6 +26,7 @@
     </div>
   </div>
   <div class="ps-product__shopping"><a class="ps-btn mb-10" href="cart.html">Add to cart<i class="ps-icon-next"></i></a>
-    <div class="ps-product__actions"><a class="mr-10" href="whishlist.html"><i class="ps-icon-heart"></i></a><a href="compare.html"><i class="ps-icon-share"></i></a></div>
+    <div class="ps-product__actions"><a class="mr-10" href="whishlist.html"><i class="ps-icon-heart"></i></a><a
+        href="compare.html"><i class="ps-icon-share"></i></a></div>
   </div>
 </div>

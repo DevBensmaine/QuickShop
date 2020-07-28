@@ -336,7 +336,7 @@ const funcs = {
       if (variants.children().length === 0) {
         setTimeout(function () {
           $.ajax({
-            url: "../js/shoe-variants.js",
+            url: "../../assets/js/shoe-variants.js",
             success: function (data) {
               var images = JSON.parse(data);
               for (var i in images) {
