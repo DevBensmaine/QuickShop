@@ -6536,5 +6536,14 @@ html .bg--parallax {
 
 .pl-100 {
   padding-left: 100px; }
+  .ps-btn-commande{
+    background-color: rgb(42, 195, 125) !important;
+  }
+  .ps-btn-commande:hover{
+    background-color: rgb(80, 207, 150) !important;
+  }
+  .ps-product--detail .ps-product__content .tab-list{
+    text-align: left !important;
+  }
 
 /*# sourceMappingURL=style.css.map */

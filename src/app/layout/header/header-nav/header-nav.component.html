@@ -102,7 +102,7 @@
         <button><i class="ps-icon-search"></i></button>
       </form>
 
-      <div class="ps-cart"><a class="ps-cart__toggle" href="#"><span><i>{{count}}</i></span><i
+      <div class="ps-cart"><a class="ps-cart__toggle" *ngIf="cartList[0].orders != 0"  href="#"><span><i>{{cart.count}}</i></span><i
             class="ps-icon-shopping-cart"></i></a>
 
         <div class="ps-cart__listing" *ngIf="cartList[0].orders != 0">
@@ -111,7 +111,7 @@
 
             <div class="ps-cart-item" *ngFor="let product of cartList[0].orders" >
               <a class="ps-cart-item__close" (click)="deleteFormCard(product.productId)"></a>
-              <div class="ps-cart-item__thumbnail"><a href="#"></a><img
+              <div class="ps-cart-item__thumbnail"><a [routerLink]="['/product-detail', product.productId]"></a><img
                   [src]="product.imgProduct" alt=""></div>
               <div class="ps-cart-item__content"><a class="ps-cart-item__title"  [routerLink]="['/product-detail', product.productId]">
                 {{product.title}}
@@ -123,8 +123,8 @@
 
           </div>
           <div class="ps-cart__total">
-            <p>Number of items:<span>{{count}}</span></p>
-            <p>Item Total:<span>DH{{somme}}</span></p>
+            <p>Number of items:<span>{{ cart.count}}</span></p>
+            <p>Item Total:<span>DH{{cart.somme}}</span></p>
           </div>
           <div class="ps-cart__footer"><a class="ps-btn" href="cart.html">Check out<i
                 class="ps-icon-arrow-left"></i></a></div>

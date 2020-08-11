@@ -711,6 +711,20 @@ $(document).ready(function(){
     });
 
 
+    //  $(".ref").click(function(){
+    //     // $(".select-ref").each(function(){
+    //     //   $(this).css("border-color", "#fc663a");
+    //     // });
+    //     alert("sasa")
+
+    //   });
+
+      $( ".select-img" ).each(function(index) {
+        $(this).on("click", function(){
+          $(".select-img" ).css("border-color", "#fff")
+          $(this).css("border-color", "#fc663a");
+        });
+    });
 
     $(window).on('load', function() {
         $('.ps-loading').addClass('loaded');

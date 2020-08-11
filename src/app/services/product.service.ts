@@ -31,9 +31,6 @@ findProductByIdForCart(id: number) {
 
 
 });
-
-console.log("Hassan Bensmaine")
-console.log(this.pp)
 return this.messages
 
 }

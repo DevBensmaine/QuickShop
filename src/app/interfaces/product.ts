@@ -1,10 +1,6 @@
 export interface Product {
-  // userId:Number;
-  // id:Number;
-  // title:String;
-  // body:String;
-
   idProduct:Number,
+  title:string,
   genre:string,
   mark:string,
   imgProduct:string,
@@ -13,10 +9,6 @@ export interface Product {
   priceAvantPromotion:Number,
   varying : string[],
   taille : string[],
-  description:string
-
-
-
-
-
+  description:string,
+  isPromotion:boolean
 }

@@ -12,21 +12,23 @@
   <div class="ps-product__block ps-product__style">
     <h4>CHOOSE YOUR STYLE</h4>
     <ul>
-      <li *ngFor="let srcImg of productActive[0].varying "><a><img src="../../../../../.{{srcImg}}" alt=""></a></li>
+      <li *ngFor="let srcImg of productActive[0].varying"><a class="select-img" (click)="selectVariant(srcImg.ref)"><img src="../../../../../.{{srcImg.src}}" alt=""></a></li>
     </ul>
   </div>
   <div class="ps-product__block ps-product__size">
     <h4>CHOOSE SIZE<a href="#">Size chart</a></h4>
-    <select class="ps-select selectpicker">
+    <select class="ps-select selectpicker"  [(ngModel)] = "myCommande.size">
       <option value="1">Select Size</option>
-      <option *ngFor="let taille of productActive[0].taille" [value]="taille">{{taille}}</option>
+      <option   *ngFor="let taille of productActive[0].taille" [ngValue]="taille">{{taille}}</option>
     </select>
     <div class="form-group">
-      <input class="form-control" type="number" value="1">
+      <input class="form-control" type="number" value="1" [(ngModel)] = "myCommande.Qte">
     </div>
   </div>
-  <div class="ps-product__shopping"><a class="ps-btn mb-10" href="cart.html">Add to cart<i class="ps-icon-next"></i></a>
-    <div class="ps-product__actions"><a class="mr-10" href="whishlist.html"><i class="ps-icon-heart"></i></a><a
+  <div class="ps-product__shopping" ><button *ngIf="!showBtn" class="ps-btn mb-10"  (click)="addToCart(productActive)"  >Add to cart<i class="ps-icon-next"></i></button>
+    <div class="ps-product__shopping"><button *ngIf="showBtn" class="ps-btn mb-10 ps-btn-commande"    >autre commande?<i class="ps-icon-next"></i></button>
+
+      <div class="ps-product__actions"><a class="mr-10" href="whishlist.html"><i class="ps-icon-heart"></i></a><a
         href="compare.html"><i class="ps-icon-share"></i></a></div>
   </div>
 </div>

@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
 import { Routes,RouterModule } from '@angular/router';
+import { FormsModule }   from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
@@ -20,6 +21,8 @@ import { ProductDetailComponent } from './pages/pageProductDetail/product-detail
 import { SliderImagesProductsComponent } from './pages/pageProductDetail/product-detail/product-description/slider-images-products/slider-images-products.component';
 import { InfoProductsComponent } from './pages/pageProductDetail/product-detail/product-description/info-products/info-products.component';
 import { ReviewProductComponent } from './pages/pageProductDetail/product-detail/product-description/review-product/review-product.component';
+import { ProductCommentComponent } from './pages/pageProductDetail/product-detail/product-description/review-product/product-comment/product-comment.component';
+import { SalesPromotionComponent } from './pages/pagehome/sales/sales-promotion/sales-promotion.component';
 
 const routes: Routes = [
   { path:'' , component:HomeMainComponent },
@@ -48,11 +51,14 @@ const routes: Routes = [
     SliderImagesProductsComponent,
     InfoProductsComponent,
     ReviewProductComponent,
+    ProductCommentComponent,
+    SalesPromotionComponent
 
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule ,
     RouterModule.forRoot(routes)
   ],
   providers: [],

@@ -21,17 +21,12 @@ export class HeaderNavComponent implements OnInit {
   getCarts() {
     this.cart.getAll().subscribe((data: any[]) => {
       this.cartList = data.filter((order) => order.userId === 2);
-      // this.cartList = data.map((obj) => ({
-      //   ...obj,
-      //   product: this.productService.findProductByIdForCart(1),
-      // }));
-      // console.log('ici !!');
-      // console.log(this.productService.findProductById(1))
-      console.log(this.cartList);
       this.cartList[0].orders.forEach((product) => {
-        this.somme += product.Qte * product.prix;
-        this.count++;
+        this.cart.somme += product.Qte * product.prix;
+        this.cart.count++;
       });
+      this.somme =this.cart.somme  ;
+      this.count = this.cart.count;
     });
   }
 
@@ -50,9 +45,13 @@ export class HeaderNavComponent implements OnInit {
       this.count++;
     });
 
-    this.cart.update(this.cartList[0]).subscribe(() => {
 
-    });
+    this.cart.update(this.cartList).subscribe(() => {});
+    alert("dsds")
+    this.cart.somme = this.somme;
+    this.cart.count = this.count;
+
+
   }
 
   ngOnInit(): void {

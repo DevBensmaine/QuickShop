@@ -9,5 +9,7 @@ export class SliderImagesProductsComponent implements OnInit {
   @Input() productActive;
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+
+  }
 }

@@ -2,7 +2,7 @@
   "products": [
     {
       "idProduct": 1,
-      "title": "Air Jordan 7 Retro",
+      "title": "Air Jordan 7 Retro PROD 1",
       "genre": "Men",
       "cat": "shoes",
       "mark": "Nike",
@@ -10,12 +10,30 @@
       "priceAvantPromotion": 220,
       "imgProduct": "./assets/images/product/2.jpg",
       "varying": [
-        "./assets/images/product/2.jpg",
-        "./assets/images/product/3.jpg",
-        "./assets/images/product/4.jpg",
-        "./assets/images/product/5.jpg",
-        "./assets/images/product/4.jpg",
-        "./assets/images/product/4.jpg"
+        {
+          "src": "./assets/images/product/2.jpg",
+          "ref": "01"
+        },
+        {
+          "src": "./assets/images/product/3.jpg",
+          "ref": "02"
+        },
+        {
+          "src": "./assets/images/product/4.jpg",
+          "ref": "03"
+        },
+        {
+          "src": "./assets/images/product/5.jpg",
+          "ref": "04"
+        },
+        {
+          "src": "./assets/images/product/4.jpg",
+          "ref": "05"
+        },
+        {
+          "src": "./assets/images/product/4.jpg",
+          "ref": "06"
+        }
       ],
       "taille": [
         "s",
@@ -24,11 +42,12 @@
         "xl",
         "xxl"
       ],
+      "isPromotion": true,
       "description": "The Nike Free RN 2017 Men's Running Sky weighs less than previous versions and features an updated knit material…"
     },
     {
       "idProduct": 2,
-      "title": "Air Jordan 7 Retro 2",
+      "title": "Air Jordan 7 PROD 2",
       "genre": "Men",
       "cat": "shoes",
       "mark": "Nike",
@@ -36,12 +55,30 @@
       "priceAvantPromotion": 220,
       "imgProduct": "./assets/images/product/2.jpg",
       "varying": [
-        "./assets/images/product/2.jpg",
-        "./assets/images/product/3.jpg",
-        "./assets/images/product/4.jpg",
-        "./assets/images/product/5.jpg",
-        "./assets/images/product/4.jpg",
-        "./assets/images/product/4.jpg"
+        {
+          "src": "./assets/images/product/2.jpg",
+          "ref": "01"
+        },
+        {
+          "src": "./assets/images/product/3.jpg",
+          "ref": "02"
+        },
+        {
+          "src": "./assets/images/product/4.jpg",
+          "ref": "03"
+        },
+        {
+          "src": "./assets/images/product/5.jpg",
+          "ref": "04"
+        },
+        {
+          "src": "./assets/images/product/4.jpg",
+          "ref": "05"
+        },
+        {
+          "src": "./assets/images/product/4.jpg",
+          "ref": "06"
+        }
       ],
       "taille": [
         "s",
@@ -50,6 +87,142 @@
         "xl",
         "xxl"
       ],
+      "isPromotion": true,
+      "description": "The Nike Free RN 2017 Men's Running Sky weighs less than previous versions and features an updated knit material…"
+    },
+    {
+      "idProduct": 3,
+      "title": "Air Jordan 7 PROD 3",
+      "genre": "Men",
+      "cat": "shoes",
+      "mark": "Nike",
+      "priceBeforePromotion": 120,
+      "priceAvantPromotion": 220,
+      "imgProduct": "./assets/images/product/3.jpg",
+      "varying": [
+        {
+          "src": "./assets/images/product/2.jpg",
+          "ref": "01"
+        },
+        {
+          "src": "./assets/images/product/3.jpg",
+          "ref": "02"
+        },
+        {
+          "src": "./assets/images/product/4.jpg",
+          "ref": "03"
+        },
+        {
+          "src": "./assets/images/product/5.jpg",
+          "ref": "04"
+        },
+        {
+          "src": "./assets/images/product/4.jpg",
+          "ref": "05"
+        },
+        {
+          "src": "./assets/images/product/4.jpg",
+          "ref": "06"
+        }
+      ],
+      "taille": [
+        "s",
+        "m",
+        "L",
+        "xl",
+        "xxl"
+      ],
+      "isPromotion": true,
+      "description": "The Nike Free RN 2017 Men's Running Sky weighs less than previous versions and features an updated knit material…"
+    },
+    {
+      "idProduct": 4,
+      "title": "Air Jordan 7 PROD 4",
+      "genre": "Men",
+      "cat": "shoes",
+      "mark": "Nike",
+      "priceBeforePromotion": 120,
+      "priceAvantPromotion": 220,
+      "imgProduct": "./assets/images/product/4.jpg",
+      "varying": [
+        {
+          "src": "./assets/images/product/2.jpg",
+          "ref": "01"
+        },
+        {
+          "src": "./assets/images/product/3.jpg",
+          "ref": "02"
+        },
+        {
+          "src": "./assets/images/product/4.jpg",
+          "ref": "03"
+        },
+        {
+          "src": "./assets/images/product/5.jpg",
+          "ref": "04"
+        },
+        {
+          "src": "./assets/images/product/4.jpg",
+          "ref": "05"
+        },
+        {
+          "src": "./assets/images/product/4.jpg",
+          "ref": "06"
+        }
+      ],
+      "taille": [
+        "s",
+        "m",
+        "L",
+        "xl",
+        "xxl"
+      ],
+      "isPromotion": true,
+      "description": "The Nike Free RN 2017 Men's Running Sky weighs less than previous versions and features an updated knit material…"
+    },
+    {
+      "idProduct": 5,
+      "title": "Air Jordan 7 PROD 10",
+      "genre": "Men",
+      "cat": "shoes",
+      "mark": "Nike",
+      "priceBeforePromotion": 120,
+      "priceAvantPromotion": 220,
+      "imgProduct": "./assets/images/product/10.jpg",
+      "varying": [
+        {
+          "src": "./assets/images/product/2.jpg",
+          "ref": "01"
+        },
+        {
+          "src": "./assets/images/product/3.jpg",
+          "ref": "02"
+        },
+        {
+          "src": "./assets/images/product/4.jpg",
+          "ref": "03"
+        },
+        {
+          "src": "./assets/images/product/5.jpg",
+          "ref": "04"
+        },
+        {
+          "src": "./assets/images/product/4.jpg",
+          "ref": "05"
+        },
+        {
+          "src": "./assets/images/product/4.jpg",
+          "ref": "06"
+        }
+      ],
+      "taille": [
+        "s",
+        "m",
+        "L",
+        "xl",
+        "xxl"
+      ],
+      "isPromotion": true,
       "description": "The Nike Free RN 2017 Men's Running Sky weighs less than previous versions and features an updated knit material…"
     }
   ],
@@ -74,23 +247,123 @@
       "orders": [
         {
           "productId": 1,
-          "title": "Air Jordan 7 Retro 22",
-          "size": "xl",
+          "title": "Air Jordan 7 Retro PROD 1",
+          "size": "",
           "imgProduct": "./assets/images/product/2.jpg",
-          "Qte": 3,
-          "prix": 160,
-          "ref": "01"
+          "Qte": 0,
+          "prix": 220,
+          "ref": ""
         },
         {
-          "productId": 2,
-          "title": "Air Jordan 7 Retro6",
-          "size": "xl",
+          "productId": 1,
+          "title": "Air Jordan 7 Retro PROD 1",
+          "size": "",
+          "imgProduct": "./assets/images/product/2.jpg",
+          "Qte": 0,
+          "prix": 220,
+          "ref": ""
+        },
+        {
+          "productId": 1,
+          "title": "Air Jordan 7 Retro PROD 1",
+          "size": "",
+          "imgProduct": "./assets/images/product/2.jpg",
+          "Qte": 0,
+          "prix": 220,
+          "ref": ""
+        },
+        {
+          "productId": 1,
+          "title": "Air Jordan 7 Retro PROD 1",
+          "size": "L",
           "imgProduct": "./assets/images/product/2.jpg",
           "Qte": 2,
-          "prix": 130,
+          "prix": 220,
+          "ref": "02"
+        },
+        {
+          "productId": 3,
+          "title": "Air Jordan 7 PROD 3",
+          "size": "L",
+          "imgProduct": "./assets/images/product/3.jpg",
+          "Qte": 1,
+          "prix": 220,
+          "ref": "02"
+        },
+        {
+          "productId": 1,
+          "title": "Air Jordan 7 Retro PROD 1",
+          "size": "",
+          "imgProduct": "./assets/images/product/2.jpg",
+          "Qte": 0,
+          "prix": 220,
+          "ref": "04"
+        },
+        {
+          "productId": 1,
+          "title": "Air Jordan 7 Retro PROD 1",
+          "size": "L",
+          "imgProduct": "./assets/images/product/2.jpg",
+          "Qte": 23,
+          "prix": 220,
           "ref": "01"
         }
       ]
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "productId": 1,
+      "name": "Hassan Bensmaine",
+      "note": 3,
+      "date": "November 25, 2017",
+      "comment": " Soufflé danish gummi bears tart. Pie wafer icing. Gummies jelly beans powder. Chocolate bar pudding macaroon candy canes chocolate apple pie chocolate cake. Sweet caramels sesame snaps halvah bear claw wafer. Sweet roll soufflé muffin topping muffin brownie. Tart bear claw cake tiramisu chocolate bar gummies dragée lemon drops brownie."
+    },
+    {
+      "id": 2,
+      "productId": "1",
+      "email": "bensmaine.dev@gmail.com",
+      "name": "HASSAN BENSMAINE",
+      "note": "3",
+      "date": "2020-08-11T01:40:31.222Z",
+      "comment": "jgggg"
+    },
+    {
+      "id": 3,
+      "productId": "1",
+      "email": "jaafar.amine@gmail.com",
+      "name": "Yassine Amine jaafar",
+      "note": "",
+      "date": "2020-08-11T01:47:38.243Z",
+      "comment": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 "
+    },
+    {
+      "id": 4,
+      "productId": "1",
+      "email": "bensmaine.hassan@gmail.com",
+      "name": "Youssef Haddoudi",
+      "note": "",
+      "date": "2020-08-11T15:22:48.254Z",
+      "comment": "On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait "
+    },
+    {
+      "id": 5,
+      "productId": "2",
+      "email": "bensmaine.dev@gmail.com",
+      "name": "fffdffdfd fdfdfdf",
+      "note": "",
+      "date": "2020-08-11T15:28:01.627Z",
+      "comment": "On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait "
+    },
+    {
+      "id": 6,
+      "productId": "1",
+      "email": "bensmaine090@hotmail.fr",
+      "name": "kakskas",
+      "note": "",
+      "date": "2020-08-11T18:19:47.751Z",
+      "comment": "xzxzxzxz"
     }
   ]
 }

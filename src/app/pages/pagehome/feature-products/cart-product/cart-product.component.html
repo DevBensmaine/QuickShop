@@ -12,7 +12,8 @@
       <div class="ps-shoe__content">
         <div class="ps-shoe__variants">
           <div class="ps-shoe__variant normal">
-              <img  *ngFor="let variant of jsonData.varying" [src]="variant" alt="">
+
+              <img  *ngFor="let variant of jsonData.varying" [src]="variant.src" alt="">
           </div>
 
         </div>

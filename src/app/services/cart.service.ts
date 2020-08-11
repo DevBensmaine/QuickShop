@@ -7,6 +7,8 @@ import { HttpClient } from '@angular/common/http';
 export class CartService {
 
   urlApi = 'http://localhost:3000/cart';
+  somme=0;
+  count=0;
 
   constructor(private http: HttpClient) { }
 
@@ -21,6 +23,11 @@ export class CartService {
   }
 
   update(cart){
-    return this.http.put(`${this.urlApi}/${cart.id}`,cart)
+    return this.http.put(`${this.urlApi}/${cart[0].id}`,cart[0])
+  }
+
+
+  addToCart(cart){
+    return this.http.put(`${this.urlApi}/${cart[0].id}`,cart[0])
   }
 }

@@ -462,6 +462,8 @@ const funcs = {
   },
 
   slickConfig() {
+
+    $(".slider").not('.slick-initialized').slick()
     var primary = $(".ps-product__image"),
       second = $(".ps-product__variants");
     primary.slick({
@@ -469,6 +471,7 @@ const funcs = {
       slidesToScroll: 1,
       asNavFor: ".ps-product__variants",
       dots: false,
+      loop: false,
       arrows: false,
     });
     second.slick({
@@ -479,6 +482,7 @@ const funcs = {
       focusOnSelect: true,
       asNavFor: ".ps-product__image",
       vertical: true,
+      loop: false,
       responsive: [
         {
           breakpoint: 992,
@@ -519,7 +523,19 @@ const funcs = {
       style: "btn-primary",
       size: 6,
     });
+
+
+    $( ".select-img" ).each(function(index) {
+
+      $(this).on("click", function(){
+        $(".select-img" ).css("border-color", "#fff")
+        $(this).css("border-color", "#fc663a");
+      });
+  });
+
   },
+
+
 
   magnificPopup() {
     $(".popup-youtube").magnificPopup({
