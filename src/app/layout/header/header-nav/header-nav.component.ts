@@ -12,6 +12,7 @@ export class HeaderNavComponent implements OnInit {
   cartList: any = [];
   somme: number = 0;
   count: number = 0;
+  orders:any =[];
 
   constructor(
     private cart: CartService,
@@ -27,6 +28,7 @@ export class HeaderNavComponent implements OnInit {
       });
       this.somme =this.cart.somme  ;
       this.count = this.cart.count;
+      this.orders = this.cartList[0].orders;
     });
   }
 

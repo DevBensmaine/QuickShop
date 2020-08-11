@@ -7,9 +7,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SliderImagesProductsComponent implements OnInit {
   @Input() productActive;
+  // productCurrent:any = []
   constructor() {}
 
   ngOnInit(): void {
-
+    // this.productCurrent = this.productActive[0];
   }
 }

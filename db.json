@@ -257,24 +257,6 @@
         {
           "productId": 1,
           "title": "Air Jordan 7 Retro PROD 1",
-          "size": "",
-          "imgProduct": "./assets/images/product/2.jpg",
-          "Qte": 0,
-          "prix": 220,
-          "ref": ""
-        },
-        {
-          "productId": 1,
-          "title": "Air Jordan 7 Retro PROD 1",
-          "size": "",
-          "imgProduct": "./assets/images/product/2.jpg",
-          "Qte": 0,
-          "prix": 220,
-          "ref": ""
-        },
-        {
-          "productId": 1,
-          "title": "Air Jordan 7 Retro PROD 1",
           "size": "L",
           "imgProduct": "./assets/images/product/2.jpg",
           "Qte": 2,
@@ -307,6 +289,15 @@
           "Qte": 23,
           "prix": 220,
           "ref": "01"
+        },
+        {
+          "productId": 4,
+          "title": "Air Jordan 7 PROD 4",
+          "size": "s",
+          "imgProduct": "./assets/images/product/4.jpg",
+          "Qte": 2,
+          "prix": 220,
+          "ref": ""
         }
       ]
     }

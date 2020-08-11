@@ -1,11 +1,11 @@
 <div class="ps-product__thumbnail">
   <div class="ps-product__preview">
-    <div class="ps-product__variants">
+    <div class="ps-product__variants" *ngIf="productActive">
 
       <div class="item"  *ngFor="let srcImg of productActive[0].varying"  > <img    src="../../../../../.{{srcImg.src}}" alt=""></div>
     </div><a class="popup-youtube ps-product__video" href="http://www.youtube.com/watch?v=0O2aH4XLbto"><img src="../../../../../../assets/images/shoe-detail/1.jpg" alt=""><i class="fa fa-play"></i></a>
   </div>
-  <div class="ps-product__image">
+  <div class="ps-product__image" *ngIf="productActive">
     <div class="item" *ngFor="let srcImg of productActive[0].varying" ><img class="zoom" src="../../../../../.{{srcImg.src}}" alt="" data-zoom-image="../../../../../.{{srcImg.src}}"></div>
   </div>
 </div>

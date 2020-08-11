@@ -463,10 +463,10 @@ const funcs = {
 
   slickConfig() {
 
-    $(".slider").not('.slick-initialized').slick()
+
     var primary = $(".ps-product__image"),
       second = $(".ps-product__variants");
-    primary.slick({
+    primary.not('.slick-initialized').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       asNavFor: ".ps-product__variants",
@@ -474,7 +474,7 @@ const funcs = {
       loop: false,
       arrows: false,
     });
-    second.slick({
+    second.not('.slick-initialized').slick({
       slidesToShow: 3,
       slidesToScroll: 1,
       arrows: false,

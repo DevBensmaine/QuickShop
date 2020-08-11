@@ -19,9 +19,6 @@ export class SalesPromotionComponent implements OnInit {
     this.router.navigate(['/product-detail', this.product.idProduct]);
   }
 
-  ngOnInit(): void {
-    console.log("===========================")
-      console.log(this.product)
-  }
+  ngOnInit(): void {}
 
 }

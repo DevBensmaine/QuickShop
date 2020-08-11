@@ -13,10 +13,7 @@ export class SalesComponent implements OnInit {
 
   getAll() {
     this.productService.getProducts().subscribe((data: any) => {
-        // this.listProduct = data.filter((product) => product.productId === true);
         this.listProduct = data
-        console.log("List product Promotion")
-        console.log(this.listProduct)
     })
   }
 

@@ -102,14 +102,14 @@
         <button><i class="ps-icon-search"></i></button>
       </form>
 
-      <div class="ps-cart"><a class="ps-cart__toggle" *ngIf="cartList[0].orders != 0"  href="#"><span><i>{{cart.count}}</i></span><i
+      <div class="ps-cart"><a class="ps-cart__toggle" *ngIf="cartList[0] != 0"  href="#"><span><i>{{cart.count}}</i></span><i
             class="ps-icon-shopping-cart"></i></a>
 
-        <div class="ps-cart__listing" *ngIf="cartList[0].orders != 0">
+        <div class="ps-cart__listing" *ngIf="cartList[0] != 0">
 
           <div class="ps-cart__content" >
 
-            <div class="ps-cart-item" *ngFor="let product of cartList[0].orders" >
+            <div class="ps-cart-item" *ngFor="let product of orders" >
               <a class="ps-cart-item__close" (click)="deleteFormCard(product.productId)"></a>
               <div class="ps-cart-item__thumbnail"><a [routerLink]="['/product-detail', product.productId]"></a><img
                   [src]="product.imgProduct" alt=""></div>
