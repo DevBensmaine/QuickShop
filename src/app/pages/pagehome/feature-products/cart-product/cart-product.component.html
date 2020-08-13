@@ -1,4 +1,4 @@
-<div class="grid-item {{jsonData.mark}}" >
+<div class="grid-item {{jsonData.mark}} col-lg-4" >
   <div class="grid-item__content-wrapper">
     <div class="ps-shoe mb-30">
       <div class="ps-shoe__thumbnail">
@@ -12,7 +12,6 @@
       <div class="ps-shoe__content">
         <div class="ps-shoe__variants">
           <div class="ps-shoe__variant normal">
-
               <img  *ngFor="let variant of jsonData.varying" [src]="variant.src" alt="">
           </div>
 

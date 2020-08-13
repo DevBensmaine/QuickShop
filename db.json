@@ -191,7 +191,7 @@
       "imgProduct": "./assets/images/product/10.jpg",
       "varying": [
         {
-          "src": "./assets/images/product/2.jpg",
+          "src": "./assets/images/product/10.jpg",
           "ref": "01"
         },
         {
@@ -248,42 +248,6 @@
         {
           "productId": 1,
           "title": "Air Jordan 7 Retro PROD 1",
-          "size": "",
-          "imgProduct": "./assets/images/product/2.jpg",
-          "Qte": 0,
-          "prix": 220,
-          "ref": ""
-        },
-        {
-          "productId": 1,
-          "title": "Air Jordan 7 Retro PROD 1",
-          "size": "L",
-          "imgProduct": "./assets/images/product/2.jpg",
-          "Qte": 2,
-          "prix": 220,
-          "ref": "02"
-        },
-        {
-          "productId": 3,
-          "title": "Air Jordan 7 PROD 3",
-          "size": "L",
-          "imgProduct": "./assets/images/product/3.jpg",
-          "Qte": 1,
-          "prix": 220,
-          "ref": "02"
-        },
-        {
-          "productId": 1,
-          "title": "Air Jordan 7 Retro PROD 1",
-          "size": "",
-          "imgProduct": "./assets/images/product/2.jpg",
-          "Qte": 0,
-          "prix": 220,
-          "ref": "04"
-        },
-        {
-          "productId": 1,
-          "title": "Air Jordan 7 Retro PROD 1",
           "size": "L",
           "imgProduct": "./assets/images/product/2.jpg",
           "Qte": 23,
@@ -298,6 +262,15 @@
           "Qte": 2,
           "prix": 220,
           "ref": ""
+        },
+        {
+          "productId": 5,
+          "title": "Air Jordan 7 PROD 10",
+          "size": "L",
+          "imgProduct": "./assets/images/product/10.jpg",
+          "Qte": 2,
+          "prix": 220,
+          "ref": "02"
         }
       ]
     }
@@ -355,6 +328,24 @@
       "note": "",
       "date": "2020-08-11T18:19:47.751Z",
       "comment": "xzxzxzxz"
+    },
+    {
+      "id": 7,
+      "productId": "2",
+      "email": "219020@supinfo.com",
+      "name": "Wafae  wafae",
+      "note": "",
+      "date": "2020-08-13T22:07:21.034Z",
+      "comment": "https://www.youtube.com/watch?v=UIEnOsQAkEs&list=PLl3CtU4THqPb_rvLczpEp31I5iOm6CUnp"
+    },
+    {
+      "id": 8,
+      "productId": "5",
+      "email": "bensmaine090@hotmail.fr",
+      "name": "zan zan ",
+      "note": "",
+      "date": "2020-08-13T22:50:48.021Z",
+      "comment": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen"
     }
   ]
 }

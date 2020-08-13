@@ -127,6 +127,7 @@ const funcs = {
 
   owlCarousel(target) {
     if (target.length > 0) {
+      target.trigger('refresh.owl.carousel');
       target.each(function () {
         var el = $(this),
           dataAuto = el.data("owl-auto"),
@@ -161,7 +162,7 @@ const funcs = {
           autoplay: dataAuto,
           autoplayTimeout: dataSpeed,
           autoplayHoverPause: true,
-          loop: dataLoop,
+          // loop: dataLoop,
           nav: dataNav,
           mouseDrag: datamouseDrag,
           touchDrag: true,
@@ -345,7 +346,7 @@ const funcs = {
               variants.owlCarousel({
                 margin: 20,
                 autoplay: false,
-                loop: false,
+                // loop: false,
                 nav: true,
                 dots: false,
                 mouseDrag: true,
@@ -403,7 +404,7 @@ const funcs = {
       variants.owlCarousel({
         margin: 20,
         autoplay: false,
-        loop: false,
+        // loop: false,
         nav: true,
         dots: false,
         mouseDrag: true,
@@ -462,8 +463,6 @@ const funcs = {
   },
 
   slickConfig() {
-
-
     var primary = $(".ps-product__image"),
       second = $(".ps-product__variants");
     primary.not('.slick-initialized').slick({
@@ -471,7 +470,6 @@ const funcs = {
       slidesToScroll: 1,
       asNavFor: ".ps-product__variants",
       dots: false,
-      loop: false,
       arrows: false,
     });
     second.not('.slick-initialized').slick({
@@ -482,7 +480,6 @@ const funcs = {
       focusOnSelect: true,
       asNavFor: ".ps-product__image",
       vertical: true,
-      loop: false,
       responsive: [
         {
           breakpoint: 992,
