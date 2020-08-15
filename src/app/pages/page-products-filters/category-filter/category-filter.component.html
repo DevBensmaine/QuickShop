@@ -1,0 +1,11 @@
+  <aside class="ps-widget--sidebar ps-widget--category">
+    <div class="ps-widget__header">
+      <h3>Category</h3>
+    </div>
+    <div class="ps-widget__content">
+      <ul class="ps-list--checked hassan" >
+        <li class="checked-cat" (click)=" clickFilterCategory(cat.name)" *ngFor="let cat of categoryProduct"><a>{{cat.name}}</a></li>
+      </ul>
+    </div>
+  </aside>
+

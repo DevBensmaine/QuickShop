@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CartService } from '../../../services/cart.service';
 import { ProductService } from '../../../services/product.service';
 import { Product } from '../../../interfaces/product';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'header-nav',
@@ -16,7 +17,8 @@ export class HeaderNavComponent implements OnInit {
 
   constructor(
     private cart: CartService,
-    private productService: ProductService
+    private productService: ProductService,
+    private router:Router
   ) {}
 
   getCarts() {
@@ -53,6 +55,11 @@ export class HeaderNavComponent implements OnInit {
     this.cart.somme = this.somme;
     this.cart.count = this.count;
 
+
+  }
+
+  CheckOutPage(id){
+    this.router.navigate(['/cart', id]);
 
   }
 

@@ -1,0 +1,98 @@
+<div class="ps-checkout pt-80 pb-80">
+  <div class="ps-container">
+    <div class="ps-checkout__form">
+      <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 ">
+              <div class="ps-checkout__billing">
+                <h3>Détail de la facturation</h3>
+                      <div class="form-group form-group--inline">
+                        <label>Prénom<span>*</span>
+                        </label>
+                        <input  [(ngModel)] = "userCustomer.fname" name="fname" class="form-control" type="text">
+                      </div>
+                      <div class="form-group form-group--inline">
+                        <label>Nom <span>*</span>
+                        </label>
+                        <input [(ngModel)] = "userCustomer.lname" name="lname"  class="form-control" type="text">
+                      </div>
+                      <div class="form-group form-group--inline">
+                        <label>Email<span>*</span>
+                        </label>
+                        <input   [(ngModel)] = "userCustomer.email" name="email" class="form-control"  type="email">
+                      </div>
+                      <div class="form-group form-group--inline">
+                        <label>Téléphone<span>*</span>
+                        </label>
+                        <input  [(ngModel)] = "userCustomer.tele" name="tele"  class="form-control" type="text">
+                      </div>
+                      <div class="form-group form-group--inline">
+                        <label>Adresse<span>*</span>
+                        </label>
+                        <input  [(ngModel)] = "userCustomer.adresse" name="adresse" class="form-control" type="text">
+                      </div>
+                <div class="form-group">
+                  <div class="ps-checkbox">
+                    <input class="form-control" type="checkbox" id="cb01">
+                    <label for="cb01">Create an account?</label>
+                  </div>
+                </div>
+                <h3 class="mt-40">Informations complémentaires</h3>
+                <div class="form-group form-group--inline textarea">
+                  <label>notes de commande</label>
+                  <textarea class="form-control"  [(ngModel)] = "userCustomer.orderInfo"  rows="5" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+              <div class="ps-checkout__order">
+                <header>
+                  <h3>Your Order</h3>
+                </header>
+                <div class="content">
+                  <table class="table ps-checkout__products">
+                    <thead>
+                      <tr>
+                        <th class="text-uppercase">Product</th>
+                        <th class="text-uppercase">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let order of orders">
+                        <td>{{ order.title }}</td>
+                        <td>DH{{ order.prix  * order.Qte}}</td>
+                      </tr>
+                      <tr>
+                        <td>Order Total</td>
+                        <td>DH{{cart.somme}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <footer>
+                  <h3>Payment Method</h3>
+                  <div class="form-group paypal">
+                    <div class="ps-radio">
+                      <input class="form-control"  [(ngModel)] = "userCustomer.payment"  type="radio" id="rdo01" name="payment">
+                      <label for="rdo01">Cheque Payment</label>
+                      <p>Please send your cheque to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                    </div>
+                  </div>
+                  <div class="form-group paypal">
+                    <div class="ps-radio ps-radio--inline">
+                      <input class="form-control" [(ngModel)] = "userCustomer.payment"  type="radio" id="rdo02" name="payment" >
+                      <label for="rdo02">Paypal</label>
+                    </div>
+                    <ul class="ps-payment-method">
+                      <li><a href="#"><img src="../../../../assets/images/payment/1.png" alt=""></a></li>
+                      <li><a href="#"><img src="../../../../assets/images/payment/2.png" alt=""></a></li>
+                      <li><a href="#"><img src="../../../../assets/images/payment/3.png" alt=""></a></li>
+                    </ul>
+                    <button (click)="placeOrder(userCustomer)" class="ps-btn ps-btn--fullwidth">Place Order<i class="ps-icon-next"></i></button>
+                  </div>
+                </footer>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -3704,6 +3704,8 @@ textarea.form-control {
         font-size: 15px; } }
 
 .ps-section--offer {
+  padding: 0 !important;
+  margin-top: 20px;
   display: -webkit-box;
   display: -moz-box;
   display: box;

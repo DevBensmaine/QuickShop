@@ -1,0 +1,11 @@
+<aside class="ps-widget--sidebar ps-widget--category">
+  <div class="ps-widget__header">
+    <h3>Taille</h3>
+  </div>
+  <div class="ps-widget__content">
+    <ul class="ps-list--checked hassan">
+      <li  class="checked-cat" (click)="clickFilterTaille(taille.name)" *ngFor="let taille of listTaille"><a>{{taille.name}}</a></li>
+
+    </ul>
+  </div>
+</aside>

@@ -4,7 +4,7 @@
       "idProduct": 1,
       "title": "Air Jordan 7 Retro PROD 1",
       "genre": "Men",
-      "cat": "shoes",
+      "cat": "Life",
       "mark": "Nike",
       "priceBeforePromotion": 120,
       "priceAvantPromotion": 220,
@@ -49,7 +49,7 @@
       "idProduct": 2,
       "title": "Air Jordan 7 PROD 2",
       "genre": "Men",
-      "cat": "shoes",
+      "cat": "Running",
       "mark": "Nike",
       "priceBeforePromotion": 120,
       "priceAvantPromotion": 220,
@@ -271,6 +271,15 @@
           "Qte": 2,
           "prix": 220,
           "ref": "02"
+        },
+        {
+          "productId": 3,
+          "title": "Air Jordan 7 PROD 3",
+          "size": "",
+          "imgProduct": "./assets/images/product/3.jpg",
+          "Qte": 0,
+          "prix": 220,
+          "ref": ""
         }
       ]
     }
@@ -347,5 +356,21 @@
       "date": "2020-08-13T22:50:48.021Z",
       "comment": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen"
     }
+  ],
+  "categroy": [
+      {"id":1 , "name":"Life"},
+      {"id":2 , "name":"Running"},
+      {"id":3 , "name":"Baseball"},
+      {"id":4 , "name":"Football"},
+      {"id":5 , "name":"Soccer"},
+      {"id":6 , "name":"Trainning & game"},
+      {"id":7 , "name":"More"}
+  ],
+  "taille": [
+    {"id":1 , "name":"S"},
+    {"id":2 , "name":"M"},
+    {"id":3 , "name":"L"},
+    {"id":4 , "name":"XL"},
+    {"id":5 , "name":"XXL"}
   ]
 }

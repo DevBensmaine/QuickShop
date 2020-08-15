@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { CartService } from '../../../../../services/cart.service';
 
 @Component({
   selector: 'slider-images-products',
@@ -8,9 +9,10 @@ import { Component, OnInit, Input } from '@angular/core';
 export class SliderImagesProductsComponent implements OnInit {
   @Input() productActive;
   // productCurrent:any = []
-  constructor() {}
+  constructor( private cart: CartService) {}
 
   ngOnInit(): void {
+
     // this.productCurrent = this.productActive[0];
   }
 }

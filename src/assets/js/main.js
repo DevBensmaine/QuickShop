@@ -561,14 +561,14 @@ $(document).ready(function(){
                   var $this = $(this),
                       values = ui.values;
 
-                  min.text('$' + values[0]);
-                  max.text('$' + values[1]);
+                  min.text('DH' + values[0]);
+                  max.text('DH' + values[1]);
               }
           });
 
           var values = el.slider("option", "values");
-          min.text('$' + values[0]);
-          max.text('$' + values[1]);
+          min.text('DH' + values[0]);
+          max.text('DH' + values[1]);
       }
       else {
           return false;
@@ -733,6 +733,16 @@ $(document).ready(function(){
     $(window).on('load resize', function() {
         resizeHeader()
     });
+
+    $('.hassan').on('click','li.checked-cat',function(){
+      //do your stuffhere;
+        if($(this).hasClass('current')){
+          $(this).removeClass('current')
+        } else {
+          $(this).addClass('current')
+        }
+      });
+
 
   });
 

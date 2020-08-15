@@ -23,11 +23,20 @@ import { InfoProductsComponent } from './pages/pageProductDetail/product-detail/
 import { ReviewProductComponent } from './pages/pageProductDetail/product-detail/product-description/review-product/review-product.component';
 import { ProductCommentComponent } from './pages/pageProductDetail/product-detail/product-description/review-product/product-comment/product-comment.component';
 import { SalesPromotionComponent } from './pages/pagehome/sales/sales-promotion/sales-promotion.component';
+import { CartCheckoutComponent } from './pages/pageCart/cart-checkout/cart-checkout.component';
+import { CheckoutComponent } from './pages/pageCart/checkout/checkout.component';
+import { PageProductsFiltersComponent } from './pages/page-products-filters/page-products-filters.component';
+import { ListProductFilterComponent } from './pages/page-products-filters/list-product-filter/list-product-filter.component';
+import { CategoryFilterComponent } from './pages/page-products-filters/category-filter/category-filter.component';
+import { TailleFilterComponent } from './pages/page-products-filters/taille-filter/taille-filter.component';
+import { PrixFilterComponent } from './pages/page-products-filters/prix-filter/prix-filter.component';
 
 const routes: Routes = [
   { path:'' , component:HomeMainComponent },
   { path:'product-detail/:id' , component:ProductDetailComponent, pathMatch: 'full' },
-  // { path:'productDetail' , component:LoginComponent  }
+  { path:'cart/:id' , component:CartCheckoutComponent , pathMatch: 'full' },
+  { path:'checkout/:id' , component:CheckoutComponent , pathMatch: 'full' },
+  { path:'product-list' , component:PageProductsFiltersComponent },
   { path: '',   redirectTo: '/', pathMatch: 'full' },
 ];
 
@@ -52,7 +61,14 @@ const routes: Routes = [
     InfoProductsComponent,
     ReviewProductComponent,
     ProductCommentComponent,
-    SalesPromotionComponent
+    SalesPromotionComponent,
+    CartCheckoutComponent,
+    CheckoutComponent,
+    PageProductsFiltersComponent,
+    ListProductFilterComponent,
+    CategoryFilterComponent,
+    TailleFilterComponent,
+    PrixFilterComponent
 
   ],
   imports: [
